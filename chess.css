@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('Images/chess2.0.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.display {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  max-width: 95vw;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .display {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.con {
+  width: 90vmin;
+  height: 90vmin;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  background-color: black;
+
+  
+}
+
+
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  
+}
+
+section:hover {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 40px;
+  width: 140px;
+  font-size: 1rem;
+  transition: all 300ms ease;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 1px white;
+}
+
+button:active {
+  transform: scale(0.97);
+}
